@@ -42,3 +42,7 @@ function getPosition(el) {
       y: yPosition
     };
   }
+
+
+  //https://www.kirupa.com/canvas/follow_mouse_cursor.htm
+  //https://www.khanacademy.org/computer-programming/my-first-program/4739178984374272
