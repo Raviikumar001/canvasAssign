@@ -17,9 +17,12 @@ function setMousePosition(e)
 }
 
 function drawCircle() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.beginPath();
-  ctx.arc(100, 75, 30, 0, 2 * Math.PI);
+  ctx.arc(mouseX, mouseY, 30, 0, 2 * Math.PI);
   ctx.stroke();
+
+  requestAnimationFrame(drawCircle);
 }
 
 drawCircle();
